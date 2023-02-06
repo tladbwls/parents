@@ -5,26 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FullPage Js</title>
+  <link rel="stylesheet" href="/css/fullpage-style.css">
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <main id="fullpage">
-    <section class="section">
-      <h2>section1</h2>
-    </section>
-    <section class="section">
-      <h2>section2</h2>
-    </section>
-    <section class="section">
-      <h2>section3</h2>
-    </section>
-    <section class="section">
-      <h2>section4</h2>
-    </section>
-    <footer class="section fp-auto-height">
-      <h2>footer</h2>
-    </footer>
-  </main>
+    <div class="wrapper">
+        <header class="header container" id="header">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="#"><img src="/img/logo-white.png" alt="부모님 연구소"></a>
+                </div>
+                <div class="headder-sns">
+                    <button>
+                        <a href="#">
+                            <img src="/img/YouTube-icon-dark.png" alt="youtube 바로가기">
+                            <span>Youtube</span>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="#">
+                            <img src="/img/ico-appstore.png" alt="appstore 바로가기">
+                            <span>App Store</span>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="#">
+                            <img src="/img/ico-google-play.png" alt="google play store 바로가기">
+                            <span>Google Play</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main id="fullpage">
+            <section class="section">
+            <h2>section1</h2>
+            </section>
+            <section class="section">
+            <h2>section2</h2>
+            </section>
+            <section class="section">
+            <h2>section3</h2>
+            </section>
+            <section class="section">
+            <h2>section4</h2>
+            </section>
+            <footer class="section fp-auto-height">
+            <h2>footer</h2>
+            </footer>
+        </main>
+    </div>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="/js/jquery.fullpage.js"></script>
   <script src="/js/main.js"></script>
