@@ -1,0 +1,31 @@
+/* header style */
+.header {width: 100%; height: auto; position: fixed; z-index: 1; top: 0; right: 0; left: 0;}
+.header-wrapper {width: 100%; height: 90px; display: flex; align-items: center; justify-content: space-between;}
+
+/* Main Section Style */
+.main-section {background: #6349eb;}
+.main-section .left {color: #fff; top: 40vh;}
+.main-section .left h2:nth-child(2) {font-weight: var(--fw-800);}
+
+.main-section .right {left: 48vw; top: 38vh; position: absolute; width: 100%; height: auto;}
+.main-section .right .main-ani {position: absolute;}
+
+.main-section.active .left h2 {
+  animation-name: ani;
+  animation-duration: 2s;
+}
+.main-section.active .left h3 {
+  animation: ani .36s 1.8s ease-in-out forwards, .36s ease-in-out forwards;
+  animation-duration: .18s;
+}
+
+@keyframes ani {
+  from {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

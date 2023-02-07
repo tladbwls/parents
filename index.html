@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FullPage Js</title>
+  <title>부모님 연구소</title>
 
   <!-- remix icon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -15,53 +15,82 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header container" id="header">
-            <div class="header-wrapper">
-                <div class="logo">
-                    <a href="#"><img src="/img/logo-white.png" alt="부모님 연구소"></a>
+       
+       
+        <!-- ********** header ********** -->
+            <header class="header container" id="header">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="#"><img src="/img/logo-white.png" alt="부모님 연구소"></a>
+                    </div>
+                    <div class="headder-sns">
+                        <button>
+                            <a href="#">
+                                <i class="ri-youtube-fill"></i>
+                                <span>Youtube</span>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="#">
+                                <i class="ri-apple-fill"></i>
+                                <span>App Store</span>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="#">
+                                <i class="ri-google-play-fill"></i>
+                                <span>Google Play</span>
+                            </a>
+                        </button>
+                    </div>
                 </div>
-                <div class="headder-sns">
-                    <button>
-                        <a href="#">
-                            <i class="ri-youtube-fill"></i>
-                            <span>Youtube</span>
-                        </a>
-                    </button>
-                    <button>
-                        <a href="#">
-                            <i class="ri-apple-fill"></i>
-                            <span>App Store</span>
-                        </a>
-                    </button>
-                    <button>
-                        <a href="#">
-                            <i class="ri-google-play-fill"></i>
-                            <span>Google Play</span>
-                        </a>
-                    </button>
+            </header>
+            <!-- ********** //header ********** -->
+
+        
+        <main id="fullpage"> 
+            
+            <!-- ********** main ********** -->
+            <section class="section main-section">
+                <div class="container">
+                    <div class="left">
+                        <h2>부모님 선물이 <br> 고민이라면</h2> 
+                        <h2>부모님 연구소!</h2>
+                        <h3>아직도 현금으로만 마음을 표현하시는 여러분들을 위해! <br> 부모님 연구소가 준비한 다양한 선물 추천 콘텐츠로 <br>색다른 이벤트를 준비해보세요!</h3>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <div class="main-ani">
+                                <img src="/img/main-first-img1.png" alt="">
+                            </div>
+                            <div class="main-ani">
+                                <img src="/img/main-first-img2.png" alt="">
+                            </div>
+                            <div class="main-ani">
+                                <img src="/img/main-first-img3.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
-            </div>
-        </header>
-        <main id="fullpage">
-            <section class="section">
-            <h2>section1</h2>
             </section>
             <section class="section">
-            <h2>section2</h2>
+                <h2>section2</h2>
             </section>
             <section class="section">
-            <h2>section3</h2>
+                <h2>section3</h2>
             </section>
             <section class="section">
-            <h2>section4</h2>
+                <h2>section4</h2>
             </section>
             <footer class="section fp-auto-height">
-            <h2>footer</h2>
+                <h2>footer</h2>
             </footer>
         </main>
+        <!-- ********** //main ********** -->
     </div>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script src="/js/jquery.fullpage.js"></script>
+  <script src="/js/jquery.fullpage.extensions.min.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>
