@@ -106,7 +106,7 @@ li::marker{list-style: none;}
 /*********** common style  ***********/
 .wrapper {width: var(--ls-full); height: auto; overflow: hidden;}
 .container {width: var(--ls-full); height: auto; max-width: 1400px; margin: auto; padding: 0 var(--el-wide);}
-.section {width: var(--ls-full); height: 100vh; padding: var(--el-section) 0; }
+.section {width: var(--ls-full); height: auto; padding: var(--el-section) 0; }
 .img img {object-fit: cover; display: block; width: 100%; height: auto;}
 .frame {width: 320px; height: 670px; border-radius: 32px; border: 10px solid #ABA2DB; }
 
