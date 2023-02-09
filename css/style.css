@@ -10,7 +10,7 @@
 .main-section .left h2:nth-child(2) {font-weight: var(--fw-800);}
 
 .main-section .right {width: 50%; height: 100%;}
-.main-section .right .img {position: relative; top: 36%; }
+.main-section .right .img {position: relative; top: 20%; left: 20%; }
 .main-section .right .main-ani {position: absolute;}
 
 .main-section.active .left h2
@@ -44,8 +44,11 @@
 .event-section .right {width: 50%; height: 100%;}
 .event-section .right .img {width: 100%; position: relative; top: 20%; left: 20%;}
 .event-section .right .img .main-ani {position: absolute;}
+.event-section .right .img .main-ani:nth-child(1) {z-index: 30; transform: translateX(50%)}
+.event-section .right .img .main-ani:nth-child(2) {z-index: 40;}
+.event-section .right .img::after {content: ""; width: 600px; height: 600px; background: #efecfd; border-radius: 50%; display: inline-block; margin: 30px 30px}
 
-.event-section .right .img .circle {width: 600px; height: 600px; background: #FAFAFD; border-radius: 50%; }
+/* .event-section .right .img .circle {} */
 
 .event-section.active .left h2
  {

@@ -108,7 +108,7 @@ li::marker{list-style: none;}
 .container {width: var(--ls-full); height: auto; max-width: 1400px; margin: auto; padding: 0 var(--el-wide);}
 .section {width: var(--ls-full); height: auto; padding: var(--el-section) 0; }
 .img img {object-fit: cover; display: block; width: 100%; height: auto;}
-.frame {width: 320px; height: 670px; border-radius: 32px; border: 10px solid #ABA2DB; }
+.frame {width: 320px; height: 670px; border-radius: 32px; border: 10px solid #ABA2DB; overflow: hidden;}
 
 /*********** common btn style  ***********/
 button {width: 163px; height: 47px; background: #161616; border-radius: 300px; margin: auto;  border: none;}
