@@ -15,8 +15,9 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+  font-size: 10px;
+	/* font-size: 100%; */
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -74,14 +75,14 @@ li::marker{list-style: none;}
   --fw-price: 600;
 
   /* Font Size */
-  --fs-8: 0.5rem;
-  --fs-10: 0.625rem;
-  --fs-12: 0.75rem;
-  --fs-14: 0.875rem;
-  --fs-16: 1rem;
-  --fs-18: 1.125rem;
-  --fs-20: 1.25rem;
-  --fs-title: 3.125rem;
+  --fs-8: 0.8rem;
+  --fs-10: 1rem;
+  --fs-12: 1.2rem;
+  --fs-14: 1.4rem;
+  --fs-16: 1.6rem;
+  --fs-18: 1.8rem;
+  --fs-20: 2rem;
+  --fs-title: 5rem;
   --fs-button: 0.875rem;
   --fs-name: 1.25rem;
   --fs-small-text: 0.875rem;
@@ -108,14 +109,14 @@ li::marker{list-style: none;}
 .container {width: var(--ls-full); height: auto; max-width: 1400px; margin: auto; padding: 0 var(--el-wide);}
 .section {width: var(--ls-full); height: auto; padding: var(--el-section) 0; }
 .img img {object-fit: cover; display: block; width: 100%; height: auto;}
-.frame {width: 320px; height: 670px; border-radius: 32px; border: 10px solid #ABA2DB; overflow: hidden;}
+.frame {width: 37.4rem; height: 67.4rem; border-radius: 32px; border: 10px solid #ABA2DB; overflow: hidden;}
 
 /*********** common btn style  ***********/
 button {width: 163px; height: 47px; background: #161616; border-radius: 300px; margin: auto;  border: none;}
 button a {display: flex; justify-content: space-evenly; align-items: center;color: #ffffff; font-size: var(--fs-18);}
 
 /*********** common font style  ***********/
-h2 {font-size: var(--fs-title); font-weight: var(--fw-400); line-height: 70px;}
+h2 {font-size: 50px; font-weight: var(--fw-400); line-height: 70px;}
 h2:nth-child(2) {padding-bottom: 2rem;}
 h3 {font-size: var(--fs-20); font-weight: var(--fw-400); line-height: 30px; }
 
