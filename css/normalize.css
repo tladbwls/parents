@@ -108,23 +108,22 @@ li::marker{list-style: none;}
 .wrapper {width: var(--ls-full); height: auto; overflow: hidden;}
 .container {width: var(--ls-full); height: auto; max-width: 1400px; margin: auto; padding: 0 var(--el-wide);}
 .section {width: var(--ls-full); height: auto; padding: var(--el-section) 0; }
-.img img {object-fit: cover; display: block; width: 100%; height: auto;}
-.frame {width: 37.4rem; height: 67.4rem; border-radius: 32px; border: 10px solid #ABA2DB; overflow: hidden;}
+img { width: 100%; height: auto;display: block;object-fit: cover; }
+.frame {width: 30rem; height: 65rem;  border: 1.2rem solid #aba3d8;border-radius: 4rem; filter: drop-shadow(0 0.4rem 2rem rgba(0,0,0,.1)); overflow: hidden;}
 
 /*********** common btn style  ***********/
-button {width: 163px; height: 47px; background: #161616; border-radius: 300px; margin: auto;  border: none;}
-button a {display: flex; justify-content: space-evenly; align-items: center;color: #ffffff; font-size: var(--fs-18);}
+/* button {width: 163px; height: 47px; background: ; border-radius: 30rem; margin: auto;  border: none;} */
+
 
 /*********** common font style  ***********/
-h2 {font-size: 50px; font-weight: var(--fw-400); line-height: 70px;}
-h2:nth-child(2) {padding-bottom: 2rem;}
-h3 {font-size: var(--fs-20); font-weight: var(--fw-400); line-height: 30px; }
+h2 {font-size: 5rem; font-weight: var(--fw-400); line-height: 7rem; letter-spacing: -0.1em;}
+h3 {font-size: var(--fs-20); font-weight: var(--fw-400);  letter-spacing: -0.1em; line-height: 3rem; margin-top: 3rem;}
 
 /* common keyframe */
 @keyframes ani { /*위에서 아래로*/
   from {
     opacity: 0;
-    transform: translate(0, 70px);
+    transform: translate(0, 30rem);
   }
   to{
     opacity: 1;
@@ -134,11 +133,11 @@ h3 {font-size: var(--fs-20); font-weight: var(--fw-400); line-height: 30px; }
 @keyframes ani1 { /*위에서 아래로 더 많이*/
   from {
     opacity: 0;
-    transform: translate(0, 500px);
+    transform: translate(0, 70rem) scale(0.1);
   }
   to{
     opacity: 1;
-    transform: translate(0, 0);
+    transform: translate(0, 0) scale(1);
   }
 }
 @keyframes bounce { /*커지게*/
