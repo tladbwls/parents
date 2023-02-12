@@ -29,7 +29,7 @@
 } 
 .main-section.active .right .img div:nth-child(2),
 .main-section.active .right .img div:nth-child(3)  {
-  animation-name: bounce;
+  animation-name: main-bounce;
   animation-duration: .8s;
 }
 .main-section.active .right .img div:nth-child(1) {
@@ -44,74 +44,64 @@
 .event-section .left h2:nth-child(2) {font-weight: var(--fw-800); color: #6349eb;}
 .event-section .left h3 {color: #636074; }
 
-/* .event-section .right {width: 50%; height: 100%;}
-.event-section .right .img {width: 100%; height: 100%; position: relative;}
-.event-section .right .img .main-ani:nth-child(1) {position: absolute; left: 50%;top: 50%;transform: translate(-50%, -30%);}
-.event-section .right .img .main-ani:nth-child(2) {left: 50%;top: 50%;transform: translate(-50%, -30%);}
-.event-section .right .img .main-ani .frame {z-index: 20;}
-.event-section .right .img .main-ani .frame img {z-index: 20;}
-.event-section .right .img .main-ani .ani-box {position: absolute; z-index: 40; width: 610px; height: 610px;}
-.event-section .right .img::after {content: ""; width: 33rem; height: 33rem; background: #efecfd; border-radius: 50%; display: inline-block; } */
-
 .event-section .right {position: relative; width: 50%; height: 100%;}
 .event-section .right div {position: absolute; top: calc(50% - 9rem); transform: translateY(-50%);}
 .event-section .right .coin {width: 53rem; height: 53rem; background: #efecfd; border-radius: 50%;}
-.event-section .right .frame {right: 38%;}
-.event-section .right .img {width: 61.7rem; right: 15%;}
+.event-section .right .frame {right: 38%; }
+.event-section .right .img {width: 61.7rem; right: 15%; }
 
 .event-section.active .left h2
  {
-  animation-name: bounce;
-  animation-duration: .8s;
+  animation-name: ani2;
+  animation-duration: 1.2s;
 }  
 .event-section.active .left h3 {
   animation-name: ani;
-  animation-duration: 1.3s;
+  animation-duration: 1.8s;
 } 
-/* .event-section.active .right .img div:nth-child(2){
-  animation-name: ;
-  animation-duration: 1.2s;
-}
-.event-section.active .right .img div:nth-child(1) {
-  animation-name: ;
-  animation-duration: 1s;
-} */
+.event-section.active .right .frame,
+.event-section.active .right .coin
+ {
+  animation: event-ani 1.2s cubic-bezier(.47,1.64,.41,.8) forwards;
+  
+}  
+.event-section.active .right .img {
+  animation: event-bounce 1.2s forwards;
+} 
 
 /* Content Section Style */
-.content-section {background: #FAFAFD;}
+.content-section {background: #f2f1f6;}
 .content-section .container {width: 100%; height: 100vh; display: flex; align-items: center;}
 .content-section .right {color: #000; width: 50%; height: 100%; }
-.content-section .right .main-txts {width: 100%; height: 100%; position: relative; top: 50%; left: 20%; transform: translateY(-20%);}
+.content-section .right .main-txts {width: 100%; height: auto; position: relative; top: calc(50% - 9rem); transform: translateY(-50%);}
 .content-section .right h2:nth-child(2) {font-weight: var(--fw-800); color: #6349eb;}
 .content-section .right h3 {color: #636074; }
 
-.content-section .left {width: 50%; height: 100%;}
-.content-section .left .img {width: 100%; height: 100%; position: relative; top: 70%; left: 70%;transform: translate(-60%, -45%);}
-.content-section .left .img .main-ani .frame {position: absolute; z-index: 20;}
-.content-section .left .img .main-ani .frame img {z-index: 20;}
-.content-section .left .img .main-ani .ani-box {position: absolute; z-index: 40; width: 61rem; height: 61rem; top: 0%; left: -3%;}
-.content-section .left .img::after {content: ""; width: 33rem; height: 33rem; background: #efecfd; border-radius: 50%; display: inline-block; }
+ .content-section .left {position: relative; width: 50%; height: 100%;}
+ .content-section .left>div {position: absolute; top: calc(50% - 9rem); transform: translateY(-50%);}
+ .content-section .left .coin {width: 53rem; height: 53rem; background: #efecfd; border-radius: 50%; }
+ .content-section .left .img {width: 46.7rem; height: 56.4rem; right: 30%;z-index: 3;}
+ .content-section .left .frame {right: 38%;}
 
 
 
 .content-section.active .right h2
  {
-  animation-name: bounce;
-  animation-duration: .8s;
+  animation-name: content-ani;
+  animation-duration: 1.2s;
 }  
 .content-section.active .right h3 {
-  animation-name: ani;
-  animation-duration: 1.3s;
-} 
-.content-section.active .left .img div:nth-child(2){
-  animation-name: bounce;
+  animation-name: content-ani-delay;
   animation-duration: 1.2s;
-}
-.content-section.active .left .img div:nth-child(1) {
-  animation-name: ani1;
-  animation-duration: 1s;
-}
-
+} 
+.content-section.active .left .frame,
+.content-section.active .left .coin
+ {
+  animation: event-ani 1.2s cubic-bezier(.47,1.64,.41,.8) forwards;
+}  
+.content-section.active .left .img {
+  animation: event-bounce 1.2s forwards;
+} 
 
 /* Qr Section Style */
 .qr-section {background: #FAFAFD;}
@@ -121,29 +111,17 @@
 .qr-section .left h2:nth-child(2) {font-weight: var(--fw-800); color: #6349eb;}
 .qr-section .left h3 {color: #636074; }
 
-.qr-section .right {width: 50%; height: 100%;}
-.qr-section .right .img {width: 100%; height: 100%; position: relative; top: 50%; transform: translateY(-30%);}
-.qr-section .right .img .main-ani {position: absolute;}
-.qr-section .right .img .main-ani:nth-child(1) {z-index: 30;
-width: 11rem;height: auto;left: 45%;top: 20%; transform: translate(-45%, -20%);}
-.qr-section .right .img .main-ani:nth-child(2) {z-index: 40;}
-.qr-section .right .img::after {content: ""; width: 33rem; height: 33rem; background: #efecfd; border-radius: 50%; display: inline-block; margin: 3rem 3rem}
+.qr-section .right {position: relative; width: 50%; height: 100%;}
+.qr-section .right div {position: absolute; top: calc(50% - 9rem); transform: translateY(-50%);}
+.qr-section .right .coin {width: 53rem; height: 53rem; background: #efecfd; border-radius: 50%; }
+.qr-section .right .qr-img {display: flex;  flex-direction: column; gap: 3rem; align-items: center; right: 38%; }
+.qr-section .right .qr-img img {width: 18rem; height: 18rem;}
+.qr-section .right .qr-img span { font-size: 2rem; line-height: 3rem; text-align: center; font-weight: 500; color:#908E9C;}
+.qr-section .right .img {width: 61.7rem; right: 18%;}
 
-
-.qr-section.active .left h2
- {
-  animation-name: bounce;
-  animation-duration: .8s;
-}  
-.qr-section.active .left h3 {
-  animation-name: ani;
-  animation-duration: 1.3s;
-} 
-.qr-section.active .right .img div:nth-child(2){
-  animation-name: bounce;
-  animation-duration: 1.2s;
+.qr-section.active .right .img {
+  animation: event-bounce 1.2s;
 }
-.qr-section.active .right .img div:nth-child(1) {
-  animation-name: ani1;
-  animation-duration: 1s;
+.qr-section.active .right .qr-img {
+  animation: qr-ani 3.2s;
 }

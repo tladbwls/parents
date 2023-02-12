@@ -140,7 +140,62 @@ h3 {font-size: var(--fs-20); font-weight: var(--fw-400);  letter-spacing: -0.1em
     transform: translate(0, 0) scale(1);
   }
 }
-@keyframes bounce { /*커지게*/
+@keyframes ani2 { /*위에서 아래로 더 많이*/
+  from {
+    opacity: 0;
+    transform: translate(0, 10rem);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes event-ani { 
+  from {
+    opacity: 0;
+    _top: calc(50% - 9rem);
+    transform: translate(0, 0);
+  }
+  to{
+    opacity: 1;
+    top: calc(50% - 9rem);
+    transform: translate(0, -50%);
+  }
+}
+@keyframes content-ani { /*오른쪽에서 왼쪽으로*/
+  from {
+    opacity: 0;
+    transform: translate(30rem, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes content-ani-delay { /*오른쪽에서 왼쪽으로*/
+  0% {
+    opacity: 0;
+    transform: translate(30rem, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(30rem, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes qr-ani { /*오른쪽에서 왼쪽으로*/
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes main-bounce { /*커지게*/
   0%{
     transform: scale(0.1);
     opacity:0;
@@ -150,3 +205,21 @@ h3 {font-size: var(--fs-20); font-weight: var(--fw-400);  letter-spacing: -0.1em
     opacity: 1;
   }
 }
+@keyframes event-bounce { /*커지게*/
+  0%{
+    opacity:0;
+    top: calc(50% - 9rem);
+    transform: translateY(-50%) scale(0.1);
+  }
+  50% {
+    opacity:0;
+    top: calc(50% - 9rem);
+    transform: translateY(-50%) scale(0.1);
+  }
+  100%{
+    opacity: 1;
+    top: calc(50% - 9rem);
+    transform: translateY(-50%) scale(1);
+  }
+}
+
