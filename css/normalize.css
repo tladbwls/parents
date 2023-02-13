@@ -186,7 +186,15 @@ h3 {font-size: var(--fs-20); font-weight: var(--fw-400);  letter-spacing: -0.1em
     transform: translate(0, 0);
   }
 }
-@keyframes qr-ani { /*오른쪽에서 왼쪽으로*/
+@keyframes gift-ani { 
+  0% {
+    transform: translate(0, 7rem);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+@keyframes qr-ani { 
   from {
     opacity: 0;
   }
